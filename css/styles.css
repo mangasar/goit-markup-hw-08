@@ -731,7 +731,14 @@ footer {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
+  transition: opacity 500ms, visibility 500ms;
 }
+
+.backdrop.is-hidden .modal {
+  transform: scale(1.5) rotate(180deg);
+  transition: transform 1000ms;
+}
+
 .modal {
   width: 528px;
   min-height: 581px;
