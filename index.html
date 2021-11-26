@@ -17,7 +17,7 @@
             <nav class="header-navigation">
             <a class="logo-header" href=""><span>Web</span>Studio </a>
             <ul class="list-header">
-                <li class="item"><a class="link" href="">Студия</a></li>
+                <li class="item item-blue"><a class="link link-blue" href="">Студия</a></li>
                 <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
                 <li class="item"><a class="link" href="">Контакты</a></li>
             </ul>
@@ -41,7 +41,7 @@
 <main>
     <section class="section-hero">
         <h1 class="title-hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button class="button-hero" type="button">Заказать услугу</button>
+            <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
         </section>
     
     <section class="section-aside">
@@ -89,15 +89,15 @@
     <section class="section section-img">
         <div class="container">
     <h2>Чем мы занимаемся</h2>
-        <ul class="list">
-            <li class="item">
-                <img src="./images/imagea.jpg" width="370" alt="компьютер">
+        <ul class="list work-list">
+            <li class="item work-item-a">
+                <img class="work-img" src="./images/imagea.jpg" width="370" alt="компьютер">
             </li>
-            <li class="item">
-                <img src="./images/imageb.jpg" width="370" alt="телефон">
+            <li class="item work-item-b">
+                <img class="work-img" src="./images/imageb.jpg" width="370" alt="телефон">
             </li>
-            <li class="item">
-                <img src="./images/imagec.jpg" width="370" alt="цвет">
+            <li class="item work-item-c">
+                <img class="work-img" src="./images/imagec.jpg" width="370" alt="цвет">
             </li>
         </ul>
     </div>
@@ -105,8 +105,7 @@
     <section class="section-team">
         <div class="container">
         <h2>Наша команда</h2>
-        
-        <ul class="list">
+         <ul class="list">
             <li class="item"><img src="./images/igor.jpg" width="270" alt="Игорь Демьяненко">
             <div class="team-item">
                 <h3>Игорь Демьяненко</h3>
@@ -352,5 +351,15 @@
 </div>
 </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="data-modal-close" data-modal-close> 
+        <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+</div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
