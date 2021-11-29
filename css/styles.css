@@ -76,6 +76,9 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* tel-navigaion*/
@@ -102,6 +105,9 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-navigation .item:not(:last-child) {
@@ -432,6 +438,10 @@ img {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
@@ -486,6 +496,10 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+
+  transition-property: border color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -604,6 +618,11 @@ footer {
   align-items: center;
   justify-content: center;
   color: #fff;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-icon {
@@ -638,6 +657,9 @@ footer {
   color: var(--body-color);
   margin-right: 8px;
   padding: 6px 22px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-button button:focus,
 .item-button button:hover {
