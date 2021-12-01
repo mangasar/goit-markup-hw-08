@@ -349,6 +349,27 @@
         </li>
     </ul>
 </div>
+<div class="join-mail">
+   <p class="join-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p> 
+  
+   <ul class="join-mail-list">
+       <li class="join-mail-item">
+        <form>
+            <div class="form-mail">
+            <label for="mail"></label>
+        <input class="mail-text" type="text" name="email" placeholder="E-mail" id="mail">
+            </div>
+    </form>
+        </li>
+   <li class="join-mail-item">
+       <button type="submit" class="button-footer">Подписаться
+    <svg class="icon-send" width="24" height="24">
+        <use href="./images/icons.svg#icon-send"></use>
+    </svg>   
+    </button>
+    </li>
+    </ul>
+</div>
 </div>
 </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -358,6 +379,36 @@
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
     </button>
+    
+    <p class="backdrop-text">Оставьте свои данные, мы вам перезвоним</p>
+    <form>
+       <div class="backdrop-box-item">
+        <label class="backdrop-name"  for="name">Имя</label>
+            <input class="border-input" type="text" name="name" id="name" >
+        </div>
+         <div class="backdrop-box-item">
+        <label class="backdrop-name" for="">Телефон
+            <input class="border-input" type="text" name="name">
+        </label>
+        </div>
+        <div class="backdrop-box-item">
+        <label class="backdrop-name" for="">Почта
+            <input class="border-input" type="text" name="name">
+        </label>
+        </div>
+       <div class="backdrop-box-item">
+        <label class="backdrop-name" for="">Комментарий</label>
+            <textarea class="border-comment" placeholder="Введите текст" name="" id=""></textarea>
+        </div>
+        <div class="backdrop-box-item">
+            <input class="backdrop-box-link" type="checkbox">
+            <label class="backdrop-link" for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+        </div>
+        <div class="backdrop-box-button">
+        <button class="button-backdrop" type="submit">Отправить</button>
+       
+        </div>
+    </form>
 </div>
 </div>
 <script src="./js/modal.js"></script>
