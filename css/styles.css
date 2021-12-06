@@ -645,7 +645,7 @@ footer {
 }
 
 .join-mail {
-  margin-left: 153px;
+  margin-left: 93px;
 }
 .join-mail-list {
   display: flex;
@@ -842,6 +842,7 @@ footer {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   top: 8px;
