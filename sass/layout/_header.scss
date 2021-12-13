@@ -53,7 +53,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__contacts {
+.nav__contacts {
   display: inline-flex;
   margin-left: auto;
   & .nav__link:focus:focus,
@@ -62,7 +62,7 @@
   }
 }
 
-.header__contacts {
+.nav__contacts {
   .nav__link {
     color: var(--main-color);
     text-decoration: none;
@@ -81,7 +81,7 @@
   }
 }
 
-.header__contacts .nav__item:not(:last-child) {
+.nav__contacts .nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -99,7 +99,7 @@
   color: var(--accent-color);
 }
 
-.header__item_active {
+.header__item--active {
   position: relative;
   &::after {
     display: block;
