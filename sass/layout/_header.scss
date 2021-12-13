@@ -2,7 +2,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header__nav {
+.header__navigation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   font-size: 26px;
   line-height: 1.1;
   & {
-    span {
+    .logo__text {
       color: var(--accent-color);
     }
   }
@@ -28,11 +28,6 @@
   & .header__item:not(:last-child) {
     margin-right: 50px;
   }
-}
-
-.header__list .header__link:focus,
-.header__list .header__link:hover {
-  color: var(--accent-color);
 }
 
 .header__link {
@@ -51,55 +46,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav__contacts {
-  display: inline-flex;
-  margin-left: auto;
-  & .nav__link:focus:focus,
-  & .nav__link:hover {
+  &:focus,
+  &:hover {
     color: var(--accent-color);
   }
 }
 
-.nav__contacts {
-  .nav__link {
-    color: var(--main-color);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.nav__contacts .nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav__icon {
-  fill: currentColor;
-  margin-right: 10px;
-  & .nav__icon:hover,
-  & .nav__icon:focus {
-    fill: currentColor;
-  }
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-}
-
-.header__item--active {
+.header__link--active {
   position: relative;
   &::after {
     display: block;
@@ -112,5 +65,44 @@
     position: absolute;
     left: 0px;
     bottom: -2px;
+  }
+}
+
+.contacts__navigation {
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+}
+.contacts__link {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+  & .nav__icon:hover,
+  & .nav__icon:focus {
+    fill: currentColor;
   }
 }

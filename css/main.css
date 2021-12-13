@@ -80,7 +80,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header__nav {
+.header__navigation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@ img {
   line-height: 1.1;
 }
 
-.logo span {
+.logo .logo__text {
   color: var(--accent-color);
 }
 
@@ -106,11 +106,6 @@ img {
 
 .header__list .header__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header__list .header__link:focus,
-.header__list .header__link:hover {
-  color: var(--accent-color);
 }
 
 .header__link {
@@ -130,17 +125,33 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__contacts {
-  display: inline-flex;
-  margin-left: auto;
-}
-
-.nav__contacts .nav__link:focus:focus,
-.nav__contacts .nav__link:hover {
+.header__link:focus, .header__link:hover {
   color: var(--accent-color);
 }
 
-.nav__contacts .nav__link {
+.header__link--active {
+  position: relative;
+}
+
+.header__link--active::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+}
+
+.contacts__navigation {
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contacts__link {
   color: var(--main-color);
   text-decoration: none;
   font-size: 14px;
@@ -156,39 +167,22 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__contacts .nav__item:not(:last-child) {
+.contacts__link:focus, .contacts__link:hover {
+  color: var(--accent-color);
+}
+
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav__icon {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.nav__icon .nav__icon:hover,
-.nav__icon .nav__icon:focus {
+.contacts__icon .nav__icon:hover,
+.contacts__icon .nav__icon:focus {
   fill: currentColor;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-}
-
-.header__item--active {
-  position: relative;
-}
-
-.header__item--active::after {
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: -2px;
 }
 
 .button-hero {
