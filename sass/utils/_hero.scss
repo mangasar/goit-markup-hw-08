@@ -1,0 +1,34 @@
+.section-hero {
+  text-align: center;
+  padding-bottom: 210px;
+  padding-top: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-hero .title-hero {
+  color: var(--primery-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+  max-width: 696px;
+
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-hero h3 {
+  color: var(--body-color);
+  margin-bottom: 10px;
+}
+.section-hero p {
+  color: var(--main-color);
+}

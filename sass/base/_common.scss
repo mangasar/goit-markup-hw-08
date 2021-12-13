@@ -1,0 +1,17 @@
+body {
+  font-family: roboto;
+  color: var(--body-color);
+}
+
+.button {
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
