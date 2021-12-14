@@ -1,38 +1,36 @@
-.section-client {
+.client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-client {
-  h2 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 50px;
-  }
+.client__title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.client-item {
+.client__item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
+
+  & + & {
+    margin-left: 30px;
+  }
 }
 
-.client-item + .client-item {
-  margin-left: 30px;
-}
-
-.client-link {
+.client__link {
   color: #afb1b8;
   width: 170px;
   height: 92px;
@@ -52,6 +50,6 @@
   }
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }

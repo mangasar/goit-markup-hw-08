@@ -1,8 +1,8 @@
-.work-list {
+.works__list {
   position: relative;
 }
 
-.work-item-a::after {
+.works__itema::after {
   position: absolute;
   content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
   background: rgba(47, 48, 58, 0.8);
@@ -21,7 +21,7 @@
   color: #ffffff;
   bottom: 0;
 }
-.work-item-b::after {
+.works__itemb::after {
   position: absolute;
   content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
   background: rgba(47, 48, 58, 0.8);
@@ -40,7 +40,7 @@
   color: #ffffff;
   bottom: 0;
 }
-.work-item-c::after {
+.works__itemc::after {
   position: absolute;
   content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
   background: rgba(47, 48, 58, 0.8);
@@ -58,4 +58,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   bottom: 0;
+}
+.works_item:last-of-type {
+  margin-right: 30px;
 }

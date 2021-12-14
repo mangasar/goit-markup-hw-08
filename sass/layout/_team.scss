@@ -1,10 +1,10 @@
-.section-team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-.section-team h2 {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -12,8 +12,28 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.team__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team__item {
+  background-color: #ffffff;
+  margin-right: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
 
-.section-team h3 {
+.team__wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -21,7 +41,7 @@
   text-align: center;
 }
 
-.section-team p {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   color: #757575;
@@ -30,28 +50,4 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 16px;
-}
-.item {
-  background-color: #ffffff;
-}
-.team-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.section-team .list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-team .item {
-  margin-right: 30px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.section-team .item:last-child {
-  margin-right: 0px;
 }

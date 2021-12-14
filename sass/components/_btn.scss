@@ -1,4 +1,4 @@
-.button-hero {
+.hero__button {
   display: block;
   text-align: center;
   color: var(--primery-white-color);
@@ -7,16 +7,10 @@
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.06em;
-  cursor: pointer;
   border-radius: 4px;
   border-style: none;
-
+  margin: 0 auto;
   padding: 10px 32px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.button-hero {
-  margin: 0 auto;
-  text-align: center;
 }

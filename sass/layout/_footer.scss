@@ -1,14 +1,14 @@
 footer {
   background-color: #2f303a;
 }
-.container-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   justify-content: baseline;
 }
 
-.logo-footer {
+.footer__logo {
   color: var(--primery-white-color);
   text-decoration: none;
   font-family: raleway;
@@ -18,54 +18,33 @@ footer {
   display: flex;
   margin-bottom: 20px;
   margin-right: 156px;
-}
-
-.logo-footer {
-  .web {
-    color: var(--accent-color);
+  & {
+    .logo__text {
+      color: var(--accent-color);
+    }
   }
 }
 
-.logo-footer {
-  span {
-    color: var(--primery-white-color);
-  }
+.footer__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-right: 70px;
 }
 
-.address {
-  p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-  }
-}
-
-.address {
-  .link {
-    color: #ffffff99;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    margin-top: 9px;
-  }
-}
-
-.address {
-  p {
-    color: var(--primery-white-color);
-    margin-right: 70px;
-  }
-}
-
-.address {
-  .link-tel {
-    display: block;
-  }
+.footer__link {
+  color: #ffffff99;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 9px;
+  display: block;
 }

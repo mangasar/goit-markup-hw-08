@@ -5,7 +5,7 @@
 .header__navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
 }
 
 .logo {
@@ -68,7 +68,7 @@
   }
 }
 
-.contacts__navigation {
+.contacts {
   display: inline-flex;
   margin-left: auto;
   align-items: center;

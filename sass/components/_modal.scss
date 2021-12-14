@@ -6,15 +6,20 @@
   top: 0;
   transition: opacity 500ms, visibility 500ms;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
 .backdrop.is-hidden {
-  .modal {
+  .backdrop__modal {
     transform: scale(1, 5) rotate(180deg);
     transition: transform 1000ms;
   }
 }
 
-.modal {
+.backdrop__modal {
   width: 528px;
   min-height: 581px;
   background: #ffffff;
@@ -28,7 +33,7 @@
   padding: 40px;
 }
 
-.data-modal-close {
+.backdrop__button--close {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -45,16 +50,8 @@
     background-color: #fff;
   }
 }
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
 
-.backdrop-box {
-  padding: 40px 40px;
-}
-.backdrop-text {
+.backdrop__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -64,8 +61,22 @@
   letter-spacing: 0.03em;
   margin-bottom: 2px;
 }
-
-.border-input {
+.backdrop__wrap {
+  margin-top: 10px;
+}
+.backdrop__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.backdrop__icon {
+  position: relative;
+}
+.backdrop__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -80,11 +91,11 @@
   }
 }
 
-.border-input:focus + .input-icon {
+.backdrop__input:focus + .backdrop-close__icon {
   fill: var(--accent-color);
 }
 
-.border-comment {
+.backdrop__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -100,31 +111,16 @@
   }
 }
 
-.backdrop-box-item {
-  margin-top: 10px;
-}
-
-.icon-backdrop {
-  position: relative;
-}
-
-.input-icon {
+.backdrop__svg {
   position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.backdrop-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #757575;
+.backdrop-box {
+  padding: 40px 40px;
 }
-
 .backdrop-link {
   font-family: Roboto;
   font-style: normal;
@@ -164,7 +160,7 @@
   fill: var(--primery-white-color);
 }
 
-.backdrop-box-link:checked + .backdrop-link .check-item {
+.backdrop__checkbox:checked + .backdrop-link .check-item {
   background-color: #2196f3;
   border: none;
 }
