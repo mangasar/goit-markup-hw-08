@@ -898,7 +898,7 @@ footer {
   padding: 40px 40px;
 }
 
-.backdrop-link {
+.backdrop__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -912,7 +912,7 @@ footer {
   display: flex;
 }
 
-.backdrop-link a {
+.backdrop__link a {
   color: #2196f3;
   text-decoration: underline;
 }
@@ -933,12 +933,12 @@ footer {
   fill: var(--primery-white-color);
 }
 
-.backdrop__checkbox:checked + .backdrop-link .check-item {
+.backdrop__checkbox:checked + .backdrop__link .check-item {
   background-color: #2196f3;
   border: none;
 }
 
-.backdrop-box-button {
+.backdrop-button {
   display: flex;
   align-items: center;
   align-content: center;
@@ -946,7 +946,7 @@ footer {
   padding-top: 30px;
 }
 
-.button-backdrop {
+.backdrop-button__send {
   width: 200px;
   height: 50px;
   background: #2196f3;
