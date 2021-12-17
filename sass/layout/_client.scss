@@ -13,21 +13,25 @@
 }
 
 .client__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+display: flex;
+flex-wrap: wrap;
 }
 
 .client__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 170px;
   height: 92px;
+  flex-basis: calc(100% / 2);
 
-  & + & {
-    margin-left: 30px;
-  }
+  // & + & {
+  //   margin-left: 30px;
+  // }
+
 }
 
 .client__link {
