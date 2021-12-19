@@ -1,6 +1,8 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .client__title {
@@ -24,9 +26,10 @@ flex-wrap: wrap;
   // display: flex;
   // justify-content: center;
   // align-items: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   flex-basis: calc(100% / 2);
+
 
   // & + & {
   //   margin-left: 30px;
@@ -36,7 +39,7 @@ flex-wrap: wrap;
 
 .client__link {
   color: #afb1b8;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   display: flex;
   border: 1px solid #afb1b8;

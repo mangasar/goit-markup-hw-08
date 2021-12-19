@@ -19,8 +19,34 @@
     .logo__text {
       color: var(--accent-color);
     }
+    padding: 16px 0 16px 15px;
   }
 }
+
+.header__button{
+  border: none;
+  background-color: transparent;
+display: inline-flex;
+margin-right: 15px;
+padding: 0px;
+}
+.header__icon{
+  justify-content: space-between
+}
+
+.header__button .header__icon-close-mob{
+  display: none;
+}
+
+.header__header .is-open .header__icon-close-mob{
+  display: block;
+}
+
+.header__header .is-open .header__icon-menu{
+  display: none;
+}
+
+
 
 .header__list {
   display: flex;
@@ -50,6 +76,14 @@
   &:hover {
     color: var(--accent-color);
   }
+}
+
+.header__item{
+  display: none;
+}
+
+.contacts__item{
+  display: none;
 }
 
 .header__link--active {
@@ -83,8 +117,8 @@
   cursor: pointer;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

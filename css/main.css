@@ -8,8 +8,6 @@
 
 .hero {
   text-align: center;
-  padding-bottom: 210px;
-  padding-top: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -19,12 +17,12 @@
 .hero__title {
   color: var(--primery-white-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3;
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 40px;
-  max-width: 696px;
+  margin-top: 118px;
   display: inline-block;
   align-items: center;
   margin-bottom: 30px;
@@ -86,8 +84,36 @@ img {
   line-height: 1.1;
 }
 
+.logo {
+  padding: 16px 0 16px 15px;
+}
+
 .logo .logo__text {
   color: var(--accent-color);
+}
+
+.header__button {
+  border: none;
+  background-color: transparent;
+  display: inline-flex;
+  margin-right: 15px;
+  padding: 0px;
+}
+
+.header__icon {
+  justify-content: space-between;
+}
+
+.header__button .header__icon-close-mob {
+  display: none;
+}
+
+.header__header .is-open .header__icon-close-mob {
+  display: block;
+}
+
+.header__header .is-open .header__icon-menu {
+  display: none;
 }
 
 .header__list {
@@ -118,6 +144,14 @@ img {
 
 .header__link:focus, .header__link:hover {
   color: var(--accent-color);
+}
+
+.header__item {
+  display: none;
+}
+
+.contacts__item {
+  display: none;
 }
 
 .header__link--active {
@@ -151,8 +185,6 @@ img {
   letter-spacing: 0.02em;
   cursor: pointer;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,7 +209,6 @@ img {
 }
 
 .hero__button {
-  display: block;
   text-align: center;
   color: var(--primery-white-color);
   font-family: roboto;
@@ -191,6 +222,8 @@ img {
   padding: 10px 32px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  margin-bottom: 118px;
 }
 
 .works__list {
@@ -262,8 +295,8 @@ img {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__wrap {
@@ -326,8 +359,8 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -420,8 +453,8 @@ img {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .client__title {
@@ -439,14 +472,12 @@ img {
 }
 
 .client__item {
-  width: 170px;
   height: 92px;
   flex-basis: calc(100% / 2);
 }
 
 .client__link {
   color: #afb1b8;
-  width: 170px;
   height: 92px;
   display: flex;
   border: 1px solid #afb1b8;
@@ -469,25 +500,24 @@ img {
 
 footer {
   background-color: #2f303a;
+  width: 100%;
+  text-align: center;
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  justify-content: baseline;
 }
 
 .footer__logo {
+  display: block;
   color: var(--primery-white-color);
   text-decoration: none;
   font-family: raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
-  display: flex;
   margin-bottom: 20px;
-  margin-right: 156px;
 }
 
 .footer__logo .logo__text {
@@ -502,7 +532,6 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-right: 70px;
 }
 
 .footer__link {
@@ -518,14 +547,18 @@ footer {
   display: block;
 }
 
+.footer_contacts {
+  margin-top: 20px;
+}
+
 .join__text {
-  display: flex;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
   letter-spacing: 1.1;
   letter-spacing: 0.03em;
+  margin-top: 60px;
 }
 
 .join__list {
@@ -572,22 +605,17 @@ footer {
   fill: currentColor;
 }
 
-.subscribe__mail {
-  margin-left: 93px;
-}
-
 .subscribe__text {
-  display: flex;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
   letter-spacing: 1.1;
   letter-spacing: 0.03em;
+  margin-top: 60px;
 }
 
 .subscribe__list {
-  display: flex;
   margin-top: 20px;
 }
 
@@ -596,7 +624,7 @@ footer {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -609,7 +637,7 @@ footer {
 }
 
 .subscribe__button {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -624,10 +652,10 @@ footer {
   padding: 10px 28px 10px 29px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
 }
 
 .subscribe__icon {
-  display: flex;
   margin-left: 10px;
 }
 

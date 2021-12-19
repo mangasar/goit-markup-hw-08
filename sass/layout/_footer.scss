@@ -1,28 +1,32 @@
 footer {
   background-color: #2f303a;
+  width: 100%;
+  text-align: center;
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  justify-content: baseline;
+  // justify-content: baseline;
 }
 
+
 .footer__logo {
+  display: block;
   color: var(--primery-white-color);
   text-decoration: none;
   font-family: raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
-  display: flex;
+  // display: flex;
   margin-bottom: 20px;
-  margin-right: 156px;
+  // margin-right: 156px;
   & {
     .logo__text {
       color: var(--accent-color);
     }
   }
+
 }
 
 .footer__text {
@@ -33,7 +37,7 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .footer__link {
@@ -47,4 +51,8 @@ footer {
   letter-spacing: 0.03em;
   margin-top: 9px;
   display: block;
+}
+
+.footer_contacts{
+  margin-top: 20px;
 }
