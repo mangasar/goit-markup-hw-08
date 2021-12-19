@@ -1,11 +1,18 @@
 .header {
   border-bottom: 1px solid #ececec;
+  width: 100%;
 }
 
 .header__navigation {
-  display: flex;
+  // display: flex;
+  // align-items: center;
+  // justify-content: baseline;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: baseline;
+  width: 100%;
 }
 
 .logo {
@@ -19,16 +26,15 @@
     .logo__text {
       color: var(--accent-color);
     }
-    padding: 16px 0 16px 15px;
+   padding: 16px 0 16px 0 ;
   }
 }
 
 .header__button{
   border: none;
   background-color: transparent;
-display: inline-flex;
-margin-right: 15px;
-padding: 0px;
+  display: inline-flex;
+  padding: 0px;
 }
 .header__icon{
   justify-content: space-between

@@ -67,12 +67,16 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  width: 100%;
 }
 
 .header__navigation {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: baseline;
+  width: 100%;
 }
 
 .logo {
@@ -85,7 +89,7 @@ img {
 }
 
 .logo {
-  padding: 16px 0 16px 15px;
+  padding: 16px 0 16px 0;
 }
 
 .logo .logo__text {
@@ -96,7 +100,6 @@ img {
   border: none;
   background-color: transparent;
   display: inline-flex;
-  margin-right: 15px;
   padding: 0px;
 }
 
