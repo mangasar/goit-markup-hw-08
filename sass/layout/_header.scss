@@ -252,10 +252,9 @@ color: #2196F3;
 .mob-menu__item-social{
   margin-right: 20px;
 }
-.mob-menu__item-social::after{
+.mob-menu__item-social:not(:last-child):after{
 content: "";
 border: 1px solid rgba(33, 33, 33, 0.2);
 transform: rotate(90deg);
 width: 22px;
-margin-right: 10px;
 }
