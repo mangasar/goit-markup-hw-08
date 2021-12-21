@@ -70,13 +70,23 @@ img {
   width: 100%;
 }
 
-.header__navigation {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+@media screen and (min-width: 320px) {
+  .header__navigation {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
 }
 
 .logo {
@@ -103,25 +113,19 @@ img {
   padding: 0px;
 }
 
-.header__button .header__icon-close-mob {
-  display: none;
-}
-
-.header__button .is-open .header__icon-close-mob {
-  display: block;
-}
-
-.header__button .is-open .header__icon-menu {
-  display: none;
-}
-
 .header__list {
-  display: none;
+  display: flex;
   margin-left: 93px;
 }
 
 .header__list .header__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__link {
@@ -149,6 +153,12 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header__item {
+    display: flex;
+  }
+}
+
 .header__link--active {
   position: relative;
 }
@@ -171,6 +181,14 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
 .contacts__link {
   color: var(--main-color);
   text-decoration: none;
@@ -189,6 +207,13 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -203,12 +228,30 @@ img {
   fill: currentColor;
 }
 
+.header__button .header__icon-close-mob {
+  display: none;
+}
+
+.header__button .is-open .header__icon-close-mob {
+  display: block;
+}
+
+.header__button .is-open .header__icon-menu {
+  display: none;
+}
+
 .button-menu-open {
   position: absolute;
   top: 10px;
   right: 0px;
   border: none;
   background-color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {
