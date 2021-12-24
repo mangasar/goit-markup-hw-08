@@ -1,4 +1,9 @@
 .subscribe__mail {
+  @media screen and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width:1200px) {
     margin-left: 93px;
   }
@@ -21,13 +26,18 @@
 
 .subscribe__list {
   margin-top: 20px;
+  @media screen and (max-width:1199px) {
+    text-align: center;
+  }
   @media screen and (min-width:1200px) {
     display: flex;
   }
 }
 
 .subscribe__item + .subscribe__item {
-  margin-left: 12px;
+  @media screen and (min-width:1200px) {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__input {
