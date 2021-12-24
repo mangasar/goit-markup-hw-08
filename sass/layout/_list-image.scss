@@ -1,14 +1,21 @@
 .work {
   display: flex;
   flex-wrap: wrap;
-}
+  @media screen and (max-width:767px) {
+    flex-direction:column;
+align-items: center;
+  }
+
 
 .work__item {
   width: 370px;
   margin-right: 30px;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
-}
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    flex-basis: calc(100% / 2);
+    display: block;
+}}
 
 .work__item:hover,
 .work__item:focus {
@@ -75,4 +82,5 @@
   color: #757575;
   margin-top: 4px;
   line-height: 1.87;
+}
 }

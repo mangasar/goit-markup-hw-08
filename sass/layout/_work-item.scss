@@ -1,5 +1,19 @@
+.works {
+  @media screen and (max-width:1199px){
+    display: none;
+  }
+}
+
 .works__list {
+  display: flex;
+  justify-content: space-between;
   position: relative;
+}
+
+.works__title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .works__itema::after {
@@ -58,7 +72,4 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   bottom: 0;
-}
-.works_item:last-of-type {
-  margin-right: 30px;
 }

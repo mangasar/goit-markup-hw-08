@@ -1,5 +1,16 @@
+
+.join{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width:1200px) {
+  
+  }
+}
+
+
 .join__text {
-  // display: flex;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
@@ -7,6 +18,9 @@
   letter-spacing: 1.1;
   letter-spacing: 0.03em;
   margin-top: 60px; 
+  @media screen and (min-width:768px){
+    display: flex;
+  }
 }
 
 .join__list {
