@@ -2,6 +2,35 @@
   @media screen and (max-width:1199px){
     display: none;
   }
+  @media screen and (min-width:1200px) {
+    padding-bottom: 94px;
+  }
+}
+
+
+.works__title {
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+@media screen and (max-width:1199px){
+  font-size: 28px;}
+  @media screen and (min-width:1200px) {
+  font-size: 36px;
+}}
+
+.works__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .works__list {
