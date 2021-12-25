@@ -52,7 +52,11 @@
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   outline: none;
-  @media screen and (min-width:480px) and (max-width:1199px) {
+  @media screen and(min-width:480px){
+    width: auto;
+  }
+
+  @media screen and(min-width:480px) and (max-width:1199px) {
     width: 450px;
     margin-bottom: 20px;
   }

@@ -282,13 +282,14 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 color: #2196F3;
 }
-
-.mob-menu__item-social{
-  margin-right: 20px;
+.mob-menu__item-social:not(:first-child){
+  margin-left: 10px;
 }
+
 .mob-menu__item-social:not(:last-child):after{
 content: "";
 border: 1px solid rgba(33, 33, 33, 0.2);
 transform: rotate(90deg);
-width: 22px;
+width: 1px;
+margin-left: 10px;
 }
