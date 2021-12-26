@@ -8,18 +8,17 @@ align-items: center;
 
 
 .work__item {
-  margin-right: 30px;
+  
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-right: 30px;
     flex-basis: calc(100% / 2 - 30px);
-    &:last-child{
-      margin-bottom: 0px;
-    }
   }
   @media screen and(min-width: 1200px){
+    margin-right: 30px;
     flex-basis: calc(100% / 3 - 30px);
-    } }
+    }}
 
 
 .work__item:hover,
@@ -29,16 +28,6 @@ align-items: center;
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
 }
-
-// .work__item:nth-last-child(-n + 3) {
-// @media screen and (min-width:1200px) {
-//   margin-bottom: 0px;
-// }}
-
-// .work__item:nth-child(3n + 3) {
-//   @media screen and (min-width:1200px) {
-//   margin-right: 0;
-// }}
 
 .work__overlay {
   position: relative;
