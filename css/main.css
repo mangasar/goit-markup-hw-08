@@ -333,6 +333,11 @@ img {
   display: none;
 }
 
+.button-menu-open-icon:hover,
+.button-menu-open-icon:focus {
+  fill: #2196F3;
+}
+
 .hero__button {
   text-align: center;
   color: var(--primery-white-color);
@@ -1490,6 +1495,11 @@ footer {
   border: none;
   background-color: inherit;
   padding: 0;
+}
+
+.close-menu-icon:focus,
+.close-menu-icon:hover {
+  fill: #2196F3;
 }
 
 .mob-menu__link {
