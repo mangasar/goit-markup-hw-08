@@ -1299,6 +1299,8 @@ footer {
   position: absolute;
   display: flex;
   align-content: center;
+  height: 100%;
+  padding: 63px 24px;
   top: 0;
   left: 0;
   background: rgba(33, 150, 243, 0.9);
@@ -1316,13 +1318,13 @@ footer {
 
 @media screen and (max-width: 767px) {
   .work .work__text {
-    padding: 111px 24px;
+    padding: 77px 24px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .work .work__text {
-    padding: 39px 24px;
+    padding: 49px 24px;
   }
 }
 
